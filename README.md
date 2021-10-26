@@ -4,7 +4,7 @@
  With considerable training data, the network would be able to recognize and classify the input images into the classes sorted by user(in "modeCNN.py" or "modeCNN1.py").
 
 # Environment
- Python 3.7.0;
- Keras;
- Numpy;
- OpenCV;
+- Python 3.7.0
+- Keras
+- Numpy
+- OpenCV
