@@ -1,6 +1,3 @@
-#!/usr/bin/env python2
-# -*- coding: utf-8 -*-
-"""
 Created on Wed Sep  8 2021
 
 @author: hejuxing
@@ -15,22 +12,13 @@ from keras.utils import np_utils
 from keras import backend as K
 if K.backend() == 'tensorflow':
     import tensorflow
-    #K.set_image_dim_ordering('tf')
 else:
     import theano
-    #K.set_image_dim_ordering('th')
 
-'''Ideally we should have changed image dim ordering based on Theano or Tensorflow, but for some reason I get following error when I switch it to 'tf' for Tensorflow.
-	However, the outcome of the prediction doesnt seem to get affected due to this and Tensorflow gives me similar result as Theano.
-	I didnt spend much time on this behavior, but if someone has answer to this then please do comment and let me know.
-    ValueError: Negative dimension size caused by subtracting 3 from 1 for 'conv2d_1/convolution' (op: 'Conv2D') with input shapes: [?,1,200,200], [3,3,200,32].
-'''
-#K.set_image_dim_ordering('th')
 K.set_image_data_format('channels_first')
 	
 	
 import numpy as np
-#import matplotlib.pyplot as plt
 import os
 
 from PIL import Image
@@ -41,7 +29,6 @@ import json
 
 import cv2
 import matplotlib
-#matplotlib.use("TkAgg")
 from matplotlib import pyplot as plt
 
 
