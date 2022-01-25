@@ -1,9 +1,7 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Sep 8 2021
+#Created on Wed Sep 8 2021
 
-@author: hejuxing
-"""
+#@author: hejuxing
+
 
 #package import
 import cv2
