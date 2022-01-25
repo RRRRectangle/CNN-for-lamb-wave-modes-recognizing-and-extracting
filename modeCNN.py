@@ -1,7 +1,7 @@
-Created on Wed Sep  8 2021
+#Created on Wed Sep  8 2021
 
-@author: hejuxing
-"""
+#@author: hejuxing
+
 
 from keras.models import Sequential
 from keras.layers import Dense, Dropout, Activation, Flatten
